@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tech Services Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+    }
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      width: 100%;
+    }
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button[type="submit"] {
+      background: #28a745;
+      color: #fff;
+    }
+    button[type="submit"]:hover {
+      background: #218838;
+    }
+    #sendWhatsApp {
+      background: #25d366;
+      color: #fff;
+    }
+    #sendWhatsApp:hover {
+      background: #1ebc57;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main>
+    <form id="contactForm" action="https://formsubmit.co/mmaduabuchiogu4@gmail.com" method="POST">
+      <!-- Redirect to Thank You page after email submission -->
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- Email Submit -->
+      <button type="submit">Send via Email</button>
+
+      <!-- WhatsApp Submit -->
+      <button type="button" id="sendWhatsApp">Send via WhatsApp</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("sendWhatsApp").addEventListener("click", function () {
+      const form = document.getElementById("contactForm");
+      const name = form.name.value;
+      const email = form.email.value;
+      const message = form.message.value;
+
+      const whatsappMsg = `Hello, my name is ${name}. My email is ${email}. Message: ${message}`;
+      const whatsappURL = `https://wa.me/2348063100974?text=${encodeURIComponent(whatsappMsg)}`;
+
+      window.open(whatsappURL, "_blank"); // Opens WhatsApp
+      window.location.href = "thankyou.html"; // Redirects to Thank You page
+    });
+  </script>
+</body>
+</html>
