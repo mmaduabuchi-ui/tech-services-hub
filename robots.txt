@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mmaduabuchi-ui.github.io/tech-services-hub/sitemap.xml
