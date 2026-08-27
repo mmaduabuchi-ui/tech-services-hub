@@ -1,0 +1,529 @@
+]<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - TECH SERVICES HUB INNOVATION</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Thank you for contacting TECH SERVICES HUB INNOVATION. We'll get back to you shortly about your AI, Web, or Solar project." />
+  <link rel="canonical" href="https://mmaduabuchi-ui.github.io/tech-services-hub/thankyou.html" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="author" content="TECH SERVICES HUB INNOVATION" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #FF6B00;
+      --primary-dark: #E05A00;
+      --secondary: #1A1A2E;
+      --accent: #00D4FF;
+      --white: #FFFFFF;
+      --light-bg: #F8F9FA;
+      --text: #2D2D3F;
+      --text-light: #6B6B80;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(255, 107, 0, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 107, 0, 0.45);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--primary);
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--secondary);
+      padding: 12px 0;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--primary);
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.8);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--white);
+      background: rgba(255, 107, 0, 0.15);
+    }
+
+    .nav-cta {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      padding: 10px 24px !important;
+      border-radius: 50px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark) !important;
+      transform: scale(1.05);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    /* ===== THANK YOU SECTION ===== */
+    .thankyou-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .thankyou-box {
+      background: var(--white);
+      padding: 60px 50px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 600px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thankyou-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .thankyou-box .icon-wrapper {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, rgba(255, 107, 0, 0.1), rgba(0, 212, 255, 0.1));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .thankyou-box .icon-wrapper i {
+      font-size: 52px;
+      color: var(--primary);
+    }
+
+    .thankyou-box h1 {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .thankyou-box h1 span {
+      color: var(--primary);
+    }
+
+    .thankyou-box p {
+      color: var(--text-light);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .thankyou-box .sub-text {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+    }
+
+    .thankyou-box .sub-text i {
+      color: var(--primary);
+    }
+
+    .thankyou-box .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    /* ===== WHATSAPP CTA ===== */
+    .whatsapp-cta {
+      margin-top: 24px;
+      padding: 20px;
+      background: rgba(37, 211, 102, 0.06);
+      border-radius: var(--radius);
+      border: 1px solid rgba(37, 211, 102, 0.15);
+    }
+
+    .whatsapp-cta p {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 12px;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--white);
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 30px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: auto;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .footer-bottom .certs {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom .certs span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-bottom a {
+      color: var(--primary);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary);
+        padding: 20px;
+        border-radius: var(--radius);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        min-width: 200px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .thankyou-box {
+        padding: 40px 24px;
+      }
+
+      .thankyou-box h1 {
+        font-size: 28px;
+      }
+
+      .thankyou-box p {
+        font-size: 16px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+      }
+
+      .btn-group .btn-primary,
+      .btn-group .btn-secondary {
+        width: 100%;
+        text-align: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom .certs {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thankyou-box {
+        padding: 30px 16px;
+      }
+
+      .thankyou-box .icon-wrapper {
+        width: 80px;
+        height: 80px;
+      }
+
+      .thankyou-box .icon-wrapper i {
+        font-size: 40px;
+      }
+
+      .thankyou-box h1 {
+        font-size: 24px;
+      }
+
+      .btn-whatsapp {
+        padding: 12px 24px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION Logo" />
+        <div class="logo-text">
+          TECH <span>HUB</span>
+          <small>INNOVATION</small>
+        </div>
+      </a>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="completed-projects.html">Projects</a>
+        <a href="contact.html" class="nav-cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== THANK YOU SECTION ===== -->
+  <section class="thankyou-section">
+    <div class="container">
+      <div class="thankyou-box">
+        <div class="icon-wrapper">
+          <i class="fas fa-check-circle"></i>
+        </div>
+
+        <h1>Thank <span>You!</span></h1>
+        <p>Your message has been received successfully.</p>
+        <p style="font-size: 16px; color: var(--text-light);">We'll get back to you within 24 hours.</p>
+
+        <div class="sub-text">
+          <i class="fas fa-clock"></i> Response Time: 1-24 hours
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <div class="whatsapp-cta">
+          <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> Want a faster response?</p>
+          <button class="btn-whatsapp" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </button>
+        </div>
+
+        <div class="btn-group">
+          <a href="index.html" class="btn-primary"><i class="fas fa-home"></i> Back to Home</a>
+          <a href="completed-projects.html" class="btn-secondary"><i class="fas fa-folder-open"></i> View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2025 TECH SERVICES HUB INNOVATION. All Rights Reserved.</span>
+        <div class="certs">
+          <span>CAC: 9773861</span>
+          <span>SMEDAN: SUID-0556-0717-7236-8379</span>
+          <span><a href="tel:+2348063100974">📞 +2348063100974</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+      });
+    });
+
+    // WhatsApp button
+    document.getElementById('whatsappBtn').addEventListener('click', function() {
+      const message = "Hello TECH SERVICES HUB INNOVATION, I just submitted a contact form and would like to follow up on my request. Please get back to me. Thank you!";
+      const whatsappURL = `https://wa.me/2348063100974?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+
+</body>
+</html>

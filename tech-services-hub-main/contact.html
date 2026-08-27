@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - TECH SERVICES HUB INNOVATION | AI Solar & Tech Solutions Nigeria</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact TECH SERVICES HUB INNOVATION for AI Automation, Web Development, and Solar Installation services in Nigeria. Call or WhatsApp +2348063100974." />
+  <link rel="canonical" href="https://mmaduabuchi-ui.github.io/tech-services-hub/contact.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="TECH SERVICES HUB INNOVATION" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #FF6B00;
+      --primary-dark: #E05A00;
+      --secondary: #1A1A2E;
+      --accent: #00D4FF;
+      --white: #FFFFFF;
+      --light-bg: #F8F9FA;
+      --text: #2D2D3F;
+      --text-light: #6B6B80;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 20px 60px rgba(255, 107, 0, 0.15);
+      --radius: 16px;
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(255, 107, 0, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 107, 0, 0.45);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--primary);
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--secondary);
+      padding: 12px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid var(--primary);
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      background: rgba(26, 26, 46, 0.97);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--primary);
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.8);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--white);
+      background: rgba(255, 107, 0, 0.15);
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .nav-cta {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      padding: 10px 24px !important;
+      border-radius: 50px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark) !important;
+      transform: scale(1.05);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      padding: 140px 0 60px;
+      background: linear-gradient(135deg, var(--secondary) 0%, #2D2D4A 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 107, 0, 0.1), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .page-header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 span {
+      color: var(--primary);
+    }
+
+    .page-header p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page-header .breadcrumb {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 14px;
+    }
+
+    .page-header .breadcrumb a {
+      color: var(--primary);
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      padding: 60px 0 80px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* ===== CONTACT INFO ===== */
+    .contact-info-box h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--secondary);
+      margin-bottom: 16px;
+    }
+
+    .contact-info-box h2 span {
+      color: var(--primary);
+    }
+
+    .contact-info-box > p {
+      color: var(--text-light);
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 20px;
+      background: var(--light-bg);
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+
+    .contact-item:hover {
+      background: rgba(255, 107, 0, 0.06);
+      transform: translateX(4px);
+    }
+
+    .contact-item .icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .contact-item .content h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .contact-item .content p {
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    .contact-item .content a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .contact-item .content a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== CERTIFICATIONS IN CONTACT ===== */
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+    }
+
+    .cert-badges .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      border: 1px solid #eee;
+      box-shadow: var(--shadow);
+    }
+
+    .cert-badges .badge i {
+      color: var(--primary);
+    }
+
+    /* ===== CONTACT FORM ===== */
+    .contact-form-wrapper {
+      background: var(--white);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .contact-form-wrapper h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrapper p {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: var(--secondary);
+    }
+
+    .form-group label .required {
+      color: var(--primary);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: inherit;
+      transition: var(--transition);
+      background: var(--white);
+      color: var(--text);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .form-actions .btn-primary {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .form-actions .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--white);
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .form-actions .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+    }
+
+    /* ===== MAP / LOCATION ===== */
+    .map-section {
+      padding: 0 0 80px;
+    }
+
+    .map-section .map-container {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 400px;
+      background: var(--light-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--text-light);
+    }
+
+    .map-section .map-container i {
+      font-size: 64px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .map-section .map-container p {
+      font-size: 18px;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--secondary), #2D2D4A);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(255, 107, 0, 0.1), transparent 60%);
+    }
+
+    .cta-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .cta-section h2 span {
+      color: var(--primary);
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 40px 0 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand img {
+      height: 48px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand h3 span {
+      color: var(--primary);
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--primary);
+    }
+
+    .footer-col .social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-col .social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      color: var(--white);
+    }
+
+    .footer-col .social a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .footer-bottom .certs {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom .certs span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary);
+        padding: 20px;
+        border-radius: var(--radius);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        min-width: 200px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .page-header h1 {
+        font-size: 32px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form-wrapper {
+        padding: 24px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .cta-section h2 {
+        font-size: 30px;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .form-actions .btn-primary,
+      .form-actions .btn-whatsapp {
+        flex: none;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header h1 {
+        font-size: 26px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 12px 28px;
+        font-size: 14px;
+      }
+
+      .contact-item {
+        padding: 12px 16px;
+      }
+
+      .contact-item .icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION Logo" />
+        <div class="logo-text">
+          TECH <span>HUB</span>
+          <small>INNOVATION</small>
+        </div>
+      </a>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="completed-projects.html">Projects</a>
+        <a href="contact.html" class="active nav-cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Get In <span>Touch</span></h1>
+      <p>Ready to cut your energy costs or build your next tech solution? Reach out to us today.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Contact
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ===== CONTACT INFO ===== -->
+        <div class="contact-info-box">
+          <h2>Let's Build Something <span>Amazing</span></h2>
+          <p>Whether you need solar installation, AI automation, or a custom web application, we're here to help. Reach out and let's discuss your project.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="icon"><i class="fas fa-phone"></i></div>
+              <div class="content">
+                <h4>Phone / WhatsApp</h4>
+                <p><a href="tel:+2348063100974">+234 806 310 0974</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon"><i class="fas fa-envelope"></i></div>
+              <div class="content">
+                <h4>Email</h4>
+                <p><a href="mailto:mmaduabuchiogu4@gmail.com">mmaduabuchiogu4@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="content">
+                <h4>Location</h4>
+                <p>Serving Nigeria Nationwide</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon"><i class="fas fa-clock"></i></div>
+              <div class="content">
+                <h4>Working Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CERTIFICATIONS ===== -->
+          <div class="cert-badges">
+            <span class="badge"><i class="fas fa-check-circle"></i> CAC: 9773861</span>
+            <span class="badge"><i class="fas fa-check-circle"></i> SMEDAN: SUID-0556-0717-7236-8379</span>
+            <span class="badge"><i class="fas fa-star"></i> Trusted in Nigeria</span>
+          </div>
+        </div>
+
+        <!-- ===== CONTACT FORM ===== -->
+        <div class="contact-form-wrapper">
+          <h3>Send Us a Message</h3>
+          <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+
+          <form id="contactForm" action="https://formsubmit.co/mmaduabuchiogu4@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_next" value="thankyou.html" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="New Contact Form Submission - TECH SERVICES HUB" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="solar">Solar Installation & Maintenance</option>
+                <option value="ai">AI Automation</option>
+                <option value="web">Full-Stack Web Development</option>
+                <option value="all">All Services</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your project, requirements, or questions..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Email
+              </button>
+              <button type="button" class="btn-whatsapp" id="sendWhatsApp">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP SECTION ===== -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-container">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 style="font-size: 24px; color: var(--secondary);">Serving Nigeria Nationwide</h3>
+        <p>We provide services across all states in Nigeria</p>
+        <div style="display: flex; gap: 30px; margin-top: 16px; flex-wrap: wrap; justify-content: center;">
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Lagos</span>
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Abuja</span>
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Port Harcourt</span>
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Ibadan</span>
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Enugu</span>
+          <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> Kano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get <span>Started</span>?</h2>
+      <p>Get a free, no-obligation consultation and project estimate today.</p>
+      <a href="tel:+2348063100974" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+      <div class="contact-info" style="margin-top: 30px; color: rgba(255,255,255,0.5); font-size: 16px;">
+        📧 <a href="mailto:mmaduabuchiogu4@gmail.com" style="color: var(--primary); font-weight: 600;">mmaduabuchiogu4@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION" />
+          <h3>TECH <span>HUB</span> <small style="display:block;font-size:12px;color:#888;">INNOVATION</small></h3>
+          <p>AI Automation, Full-Stack Web Development, and Solar Solutions for Nigerian homes and businesses.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="completed-projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AI Automation</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Solar Installation</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px;">
+            📞 <a href="tel:+2348063100974" style="color:var(--primary);">+2348063100974</a><br>
+            📧 <a href="mailto:mmaduabuchiogu4@gmail.com" style="color:var(--primary);">mmaduabuchiogu4@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 TECH SERVICES HUB INNOVATION. All Rights Reserved.</span>
+        <div class="certs">
+          <span>CAC: 9773861</span>
+          <span>SMEDAN: SUID-0556-0717-7236-8379</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // WhatsApp Button
+    document.getElementById('sendWhatsApp').addEventListener('click', function() {
+      const form = document.getElementById('contactForm');
+      const name = form.querySelector('#name').value || 'Customer';
+      const email = form.querySelector('#email').value || 'Not provided';
+      const phone = form.querySelector('#phone').value || 'Not provided';
+      const service = form.querySelector('#service').value || 'Not specified';
+      const message = form.querySelector('#message').value || 'No message provided';
+
+      const whatsappMsg = `Hello TECH SERVICES HUB INNOVATION,
+
+My name: ${name}
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+Message: ${message}
+
+I'm interested in your services. Please contact me.`;
+
+      const whatsappURL = `https://wa.me/2348063100974?text=${encodeURIComponent(whatsappMsg)}`;
+      window.open(whatsappURL, '_blank');
+
+      // Redirect to thank you page after a short delay
+      setTimeout(() => {
+        window.location.href = 'thankyou.html';
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>

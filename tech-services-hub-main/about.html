@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - TECH SERVICES HUB INNOVATION | AI Solar & Tech Solutions Nigeria</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TECH SERVICES HUB INNOVATION is a CAC & SMEDAN certified company delivering AI Automation, Web Development, and Solar Solutions in Nigeria. Learn about our mission." />
+  <link rel="canonical" href="https://mmaduabuchi-ui.github.io/tech-services-hub/about.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="TECH SERVICES HUB INNOVATION" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About TECH SERVICES HUB INNOVATION",
+      "description": "AI Automation, Full-Stack Web Development, and Solar Installation & Maintenance company in Nigeria.",
+      "url": "https://mmaduabuchi-ui.github.io/tech-services-hub/about.html"
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #FF6B00;
+      --primary-dark: #E05A00;
+      --secondary: #1A1A2E;
+      --accent: #00D4FF;
+      --white: #FFFFFF;
+      --light-bg: #F8F9FA;
+      --text: #2D2D3F;
+      --text-light: #6B6B80;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 20px 60px rgba(255, 107, 0, 0.15);
+      --radius: 16px;
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(255, 107, 0, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 107, 0, 0.45);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--primary);
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--secondary);
+      padding: 12px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid var(--primary);
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      background: rgba(26, 26, 46, 0.97);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--primary);
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.8);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--white);
+      background: rgba(255, 107, 0, 0.15);
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .nav-cta {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      padding: 10px 24px !important;
+      border-radius: 50px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark) !important;
+      transform: scale(1.05);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      padding: 140px 0 60px;
+      background: linear-gradient(135deg, var(--secondary) 0%, #2D2D4A 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 107, 0, 0.1), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .page-header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 span {
+      color: var(--primary);
+    }
+
+    .page-header p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page-header .breadcrumb {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 14px;
+    }
+
+    .page-header .breadcrumb a {
+      color: var(--primary);
+    }
+
+    /* ===== ABOUT CONTENT ===== */
+    .about-content {
+      padding: 80px 0;
+    }
+
+    .about-content .about-text {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-content .about-text h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    .about-content .about-text h2 span {
+      color: var(--primary);
+    }
+
+    .about-content .about-text p {
+      color: var(--text-light);
+      font-size: 17px;
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+
+    .about-content .about-text .highlight-box {
+      background: var(--light-bg);
+      padding: 24px 30px;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--primary);
+      margin: 24px 0;
+      text-align: left;
+    }
+
+    .about-content .about-text .highlight-box p {
+      margin-bottom: 0;
+      font-style: italic;
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title .tag {
+      display: inline-block;
+      background: rgba(255, 107, 0, 0.12);
+      color: var(--primary);
+      padding: 4px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 span {
+      color: var(--primary);
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===== MISSION VISION ===== */
+    .mission-vision {
+      padding: 80px 0;
+      background: var(--light-bg);
+    }
+
+    .mv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .mv-card {
+      background: var(--white);
+      padding: 40px 30px;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .mv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .mv-card .icon {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .mv-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--secondary);
+    }
+
+    .mv-card p {
+      color: var(--text-light);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* ===== TEAM SECTION ===== */
+    .team {
+      padding: 80px 0;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .team-card .info {
+      padding: 24px;
+    }
+
+    .team-card .info h4 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    .team-card .info .role {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .team-card .info p {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    /* ===== CERTIFICATIONS ===== */
+    .certifications {
+      padding: 80px 0;
+      background: var(--secondary);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .certifications .section-title h2 {
+      color: var(--white);
+    }
+
+    .certifications .section-title p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .cert-card {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: var(--transition);
+    }
+
+    .cert-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .cert-card .icon {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .cert-card h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .cert-card .number {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .cert-card p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--secondary), #2D2D4A);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(255, 107, 0, 0.1), transparent 60%);
+    }
+
+    .cta-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .cta-section h2 span {
+      color: var(--primary);
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-section .contact-info {
+      margin-top: 30px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+    }
+
+    .cta-section .contact-info a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 40px 0 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand h3 span {
+      color: var(--primary);
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--primary);
+    }
+
+    .footer-col .social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-col .social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      color: var(--white);
+    }
+
+    .footer-col .social a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .footer-bottom .certs {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom .certs span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .mv-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary);
+        padding: 20px;
+        border-radius: var(--radius);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        min-width: 200px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .page-header h1 {
+        font-size: 32px;
+      }
+
+      .about-content .about-text h2 {
+        font-size: 30px;
+      }
+
+      .mv-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .cta-section h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header h1 {
+        font-size: 26px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 12px 28px;
+        font-size: 14px;
+      }
+
+      .about-content .about-text h2 {
+        font-size: 26px;
+      }
+
+      .about-content .about-text .highlight-box {
+        padding: 16px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION Logo" />
+        <div class="logo-text">
+          TECH <span>HUB</span>
+          <small>INNOVATION</small>
+        </div>
+      </a>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+        <a href="completed-projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About <span>Us</span></h1>
+      <p>Learn about our mission, vision, and the team behind TECH SERVICES HUB INNOVATION.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / About
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT CONTENT ===== -->
+  <section class="about-content">
+    <div class="container">
+      <div class="about-text">
+        <h2>Who We <span>Are</span></h2>
+        <p><strong>TECH SERVICES HUB INNOVATION</strong> is a Nigerian technology company that combines <strong>AI Automation</strong>, <strong>Full-Stack Web Development</strong>, and <strong>Solar Installation & Maintenance</strong> to deliver integrated, intelligent energy solutions.</p>
+        <p>Founded by <strong>Mmaduabuchi Ogu</strong>, an AI/ML and NLP certified engineer, we bridge the gap between cutting-edge technology and practical energy solutions for Nigerian homes and businesses.</p>
+        <div class="highlight-box">
+          <p><i class="fas fa-quote-left" style="color: var(--primary); margin-right: 8px;"></i> Our mission is to make solar energy smarter, more efficient, and accessible to every Nigerian through the power of artificial intelligence and modern technology.</p>
+        </div>
+        <p>We are officially registered with the Corporate Affairs Commission (CAC) and certified by SMEDAN, ensuring you receive professional, trusted service.</p>
+        <a href="contact.html" class="btn-primary" style="margin-top: 16px;">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION VISION VALUES ===== -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="section-title">
+        <span class="tag">Our Purpose</span>
+        <h2>Mission, Vision &amp; <span>Values</span></h2>
+        <p>Driven by innovation and a commitment to sustainable energy solutions.</p>
+      </div>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To deliver intelligent, AI-powered solar and technology solutions that reduce energy costs, promote sustainability, and empower Nigerian homes and businesses.</p>
+        </div>
+        <div class="mv-card">
+          <div class="icon"><i class="fas fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To become Nigeria's leading provider of integrated AI and solar technology solutions, creating a smarter, more sustainable future for all.</p>
+        </div>
+        <div class="mv-card">
+          <div class="icon"><i class="fas fa-heart"></i></div>
+          <h3>Our Values</h3>
+          <p><strong>Innovation</strong> · <strong>Integrity</strong> · <strong>Excellence</strong> · <strong>Sustainability</strong> · <strong>Customer-Centricity</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="team">
+    <div class="container">
+      <div class="section-title">
+        <span class="tag">Leadership</span>
+        <h2>Meet Our <span>CEO</span></h2>
+        <p>Driven by passion and expertise in AI and renewable energy.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="Mmaduabuchi Ogu - CEO" />
+          <div class="info">
+            <h4>Mmaduabuchi Ogu</h4>
+            <p class="role">CEO &amp; Lead Engineer</p>
+            <p>AI/ML &amp; NLP Certified Engineer with expertise in AI automation, full-stack development, and solar energy systems.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="Pictures/1000008373.jpg" alt="Tech Services Team" />
+          <div class="info">
+            <h4>Technical Team</h4>
+            <p class="role">Solar &amp; Tech Experts</p>
+            <p>Certified solar technicians and software developers dedicated to delivering quality solutions.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="Pictures/1000008355.jpg" alt="Project Team" />
+          <div class="info">
+            <h4>Project Team</h4>
+            <p class="role">Operations &amp; Support</p>
+            <p>Dedicated professionals ensuring smooth project execution and exceptional customer service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="certifications">
+    <div class="container">
+      <div class="section-title">
+        <span class="tag" style="background: rgba(255,107,0,0.2); color: var(--primary);">Credentials</span>
+        <h2>Our <span>Certifications</span></h2>
+        <p>Official recognition and registration that demonstrate our commitment to professionalism and quality.</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="icon"><i class="fas fa-building"></i></div>
+          <h4>CAC Registration</h4>
+          <div class="number">9773861</div>
+          <p>Registered with the Corporate Affairs Commission of Nigeria</p>
+        </div>
+        <div class="cert-card">
+          <div class="icon"><i class="fas fa-certificate"></i></div>
+          <h4>SMEDAN Certification</h4>
+          <div class="number">SUID-0556-0717-7236-8379</div>
+          <p>Certified by the Small and Medium Enterprises Development Agency of Nigeria</p>
+        </div>
+        <div class="cert-card">
+          <div class="icon"><i class="fas fa-award"></i></div>
+          <h4>AI &amp; Tech Expertise</h4>
+          <div class="number">Certified</div>
+          <p>AI/ML and NLP certified with proven experience in technology innovation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Work with <span>Us</span>?</h2>
+      <p>Get a free, no-obligation solar savings report tailored to your home or business.</p>
+      <a href="contact.html" class="btn-primary"><i class="fas fa-rocket"></i> Get Your Free Report</a>
+      <div class="contact-info">
+        📞 <a href="tel:+2348063100974">+2348063100974</a> &nbsp;|&nbsp;
+        📧 <a href="mailto:mmaduabuchiogu4@gmail.com">mmaduabuchiogu4@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>TECH <span>HUB</span> <small style="display:block;font-size:12px;color:#888;">INNOVATION</small></h3>
+          <p>AI Automation, Full-Stack Web Development, and Solar Solutions for Nigerian homes and businesses.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="completed-projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AI Automation</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Solar Installation</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px;">
+            📞 <a href="tel:+2348063100974" style="color:var(--primary);">+2348063100974</a><br>
+            📧 <a href="mailto:mmaduabuchiogu4@gmail.com" style="color:var(--primary);">mmaduabuchiogu4@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 TECH SERVICES HUB INNOVATION. All Rights Reserved.</span>
+        <div class="certs">
+          <span>CAC: 9773861</span>
+          <span>SMEDAN: SUID-0556-0717-7236-8379</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>

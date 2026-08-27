@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - TECH SERVICES HUB INNOVATION</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Privacy Policy for TECH SERVICES HUB INNOVATION. Learn how we collect, use, and protect your personal information." />
+  <link rel="canonical" href="https://mmaduabuchi-ui.github.io/tech-services-hub/privacy.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="TECH SERVICES HUB INNOVATION" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #FF6B00;
+      --primary-dark: #E05A00;
+      --secondary: #1A1A2E;
+      --accent: #00D4FF;
+      --white: #FFFFFF;
+      --light-bg: #F8F9FA;
+      --text: #2D2D3F;
+      --text-light: #6B6B80;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(255, 107, 0, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 107, 0, 0.45);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--secondary);
+      padding: 12px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid var(--primary);
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      background: rgba(26, 26, 46, 0.97);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--primary);
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.8);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--white);
+      background: rgba(255, 107, 0, 0.15);
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .nav-cta {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      padding: 10px 24px !important;
+      border-radius: 50px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark) !important;
+      transform: scale(1.05);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      padding: 140px 0 40px;
+      background: linear-gradient(135deg, var(--secondary) 0%, #2D2D4A 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 107, 0, 0.1), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .page-header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-header h1 {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 span {
+      color: var(--primary);
+    }
+
+    .page-header p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page-header .breadcrumb {
+      margin-top: 16px;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 14px;
+    }
+
+    .page-header .breadcrumb a {
+      color: var(--primary);
+    }
+
+    /* ===== PRIVACY CONTENT ===== */
+    .privacy-content {
+      padding: 60px 0 80px;
+    }
+
+    .privacy-content .content-box {
+      background: var(--white);
+      padding: 50px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .privacy-content .content-box .last-updated {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 30px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .privacy-content .content-box h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin: 30px 0 12px;
+    }
+
+    .privacy-content .content-box h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content .content-box h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 20px 0 10px;
+    }
+
+    .privacy-content .content-box p {
+      color: var(--text-light);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .privacy-content .content-box ul {
+      margin: 12px 0 20px 24px;
+      color: var(--text-light);
+    }
+
+    .privacy-content .content-box ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .privacy-content .content-box ul li strong {
+      color: var(--text);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 40px 0 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand img {
+      height: 48px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand h3 span {
+      color: var(--primary);
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--primary);
+    }
+
+    .footer-col .social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-col .social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      color: var(--white);
+    }
+
+    .footer-col .social a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .footer-bottom .certs {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom .certs span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-bottom a {
+      color: var(--primary);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary);
+        padding: 20px;
+        border-radius: var(--radius);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        min-width: 200px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .page-header h1 {
+        font-size: 30px;
+      }
+
+      .privacy-content .content-box {
+        padding: 30px 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header h1 {
+        font-size: 24px;
+      }
+
+      .privacy-content .content-box h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION Logo" />
+        <div class="logo-text">
+          TECH <span>HUB</span>
+          <small>INNOVATION</small>
+        </div>
+      </a>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="completed-projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Privacy <span>Policy</span></h1>
+      <p>How we collect, use, and protect your personal information.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Privacy Policy
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRIVACY CONTENT ===== -->
+  <section class="privacy-content">
+    <div class="container">
+      <div class="content-box">
+        <div class="last-updated">
+          <i class="fas fa-calendar-alt"></i> Last Updated: January 2025
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to TECH SERVICES HUB INNOVATION. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+        <p>Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site or use our services.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+          <li><strong>Personal Identification Information:</strong> Name, email address, phone number, and other contact details you provide when filling out forms.</li>
+          <li><strong>Usage Data:</strong> Information about how you interact with our website, including pages visited, time spent, and referral sources.</li>
+          <li><strong>Device Information:</strong> Browser type, IP address, operating system, and device type.</li>
+          <li><strong>Project Information:</strong> Details about your solar, AI, or web development project requirements.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use your information for the following purposes:</p>
+        <ul>
+          <li>To provide, maintain, and improve our services</li>
+          <li>To respond to your inquiries and fulfill your requests</li>
+          <li>To send you technical notices, updates, and promotional communications</li>
+          <li>To monitor and analyze usage trends to improve user experience</li>
+          <li>To protect against fraud and unauthorized transactions</li>
+          <li>To comply with legal obligations</li>
+        </ul>
+
+        <h2>4. How We Share Your Information</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. We may share information in the following situations:</p>
+        <ul>
+          <li><strong>With Service Providers:</strong> We may share data with third-party vendors who assist us in operating our website and delivering services.</li>
+          <li><strong>For Legal Reasons:</strong> If required by law or to protect our rights, we may disclose information.</li>
+          <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or asset sale, your information may be transferred.</li>
+        </ul>
+
+        <h2>5. Cookies and Tracking Technologies</h2>
+        <p>We use cookies and similar tracking technologies to enhance your browsing experience. Cookies are small data files stored on your device. You can control cookie preferences in your browser settings.</p>
+
+        <h2>6. Data Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the personal information we hold about you</li>
+          <li>Request correction of inaccurate information</li>
+          <li>Request deletion of your information</li>
+          <li>Opt-out of marketing communications</li>
+          <li>Withdraw consent at any time</li>
+        </ul>
+
+        <h2>8. Third-Party Links</h2>
+        <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Our services are not directed to children under 13. We do not knowingly collect personal information from children. If we become aware of such collection, we will take steps to delete the information.</p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated date. We encourage you to review this policy periodically.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this privacy policy or our data practices, please contact us:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:mmaduabuchiogu4@gmail.com" style="color: var(--primary);">mmaduabuchiogu4@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+2348063100974" style="color: var(--primary);">+234 806 310 0974</a></li>
+          <li><strong>Address:</strong> Nigeria</li>
+        </ul>
+
+        <p style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: var(--text-light);">
+          <i class="fas fa-shield-alt" style="color: var(--primary);"></i> 
+          Your privacy matters to us. We are committed to protecting your data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Pictures/Gemini_Generated_Image_y190ycy190ycy190.jpg" alt="TECH SERVICES HUB INNOVATION" />
+          <h3>TECH <span>HUB</span> <small style="display:block;font-size:12px;color:#888;">INNOVATION</small></h3>
+          <p>AI Automation, Full-Stack Web Development, and Solar Solutions for Nigerian homes and businesses.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="completed-projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AI Automation</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Solar Installation</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px;">
+            📞 <a href="tel:+2348063100974" style="color:var(--primary);">+2348063100974</a><br>
+            📧 <a href="mailto:mmaduabuchiogu4@gmail.com" style="color:var(--primary);">mmaduabuchiogu4@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 TECH SERVICES HUB INNOVATION. All Rights Reserved.</span>
+        <div class="certs">
+          <span>CAC: 9773861</span>
+          <span>SMEDAN: SUID-0556-0717-7236-8379</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
